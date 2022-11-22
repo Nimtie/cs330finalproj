@@ -109,7 +109,7 @@ def change_state(state, char):
 # Only runs if not in a test environment
 if 'unittest' not in sys.modules.keys():
     while True:
-        modeInput = input('Choose a mode: \nStandard\nRandom\n')
+        modeInput = input('Choose a mode: \n1.Standard\n2.Random\nSelection: ')
         if modeInput == 'Standard' or modeInput == 'Random':
             sec_device(modeInput)
             break
